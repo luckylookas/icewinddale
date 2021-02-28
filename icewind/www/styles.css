@@ -76,14 +76,14 @@ body {
 .bg-red {
     opacity: 0;
     animation: fadeInOut ease-in-out 30s infinite;
-    background-image: url("www/blue_red_final.jpg");
+    background-image: url("blue_red_final.jpg");
 
 }
 
 .bg-green {
     opacity: 1;
     animation: fadeOutIn ease-in-out 30s infinite;
-    background-image: url("www/blue_green_final.jpg");
+    background-image: url("blue_green_final.jpg");
 }
 
 
