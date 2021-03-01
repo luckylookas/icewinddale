@@ -1,17 +1,4 @@
-*, body, html {
-    background-color: transparent;
-    margin: 0;
-    padding: 0;
-    font-family: 'Cinzel', serif;
-    color: #EFFBFF;
-    overflow-x: hidden;
-}
-
-body {
-    background-color: #1b1c1d;
-}
-
-#content {
+.content {
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -32,32 +19,10 @@ body {
     left: 0;
     height: 100%;
     width: 100%;
-    background: linear-gradient(#1b1c1d00 80%, #1b1c1dff 99%);
+    background: linear-gradient(#ffffff00 50%, var(--bg) 97%);
 }
 
-#first-row {
-    padding-top: 30vh !important;
-}
-
-#content > .row {
-    padding: 20px 20px 20px;
-    justify-content: space-between;
-    width: 80%;
-    background-color: transparent;
-    display: flex;
-    flex-direction: row;
-}
-
-#content > .row > .spacer {
-    flex-basis: 5%;
-    flex-grow: 0.1;
-}
-#content > .row > .column {
-    flex-basis: 33%;
-    flex-grow: 1;
-}
-
-.bg {
+.bgred {
     width: 100vw;
     background-size: contain;
     background-repeat: no-repeat;
@@ -65,21 +30,23 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-}
-
-.bg-red {
     opacity: 0;
     animation: fadeInOut ease-in-out 30s infinite;
     background-image: url("blue_red_final.jpg");
-
 }
 
-.bg-green {
-    opacity: 1;
+.bggreen {
+    width: 100vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
     animation: fadeOutIn ease-in-out 30s infinite;
     background-image: url("blue_green_final.jpg");
 }
-
 
 @keyframes fadeOutIn {
     0% {
@@ -109,27 +76,10 @@ body {
     #content {
         top: 1vh;
     }
-    h1 {
-        z-index: 15;
-        padding: 50px;
-        overflow: hidden;
-        font-weight: lighter;
-        background-color: #ffffff00;
-        font-size: 16pt;
-    }
 }
-
 
 @media only screen and (min-width: 1000px) {
     #content {
         top: 10vh;
-    }
-    h1 {
-        z-index: 999;
-        padding: 50px;
-        overflow: hidden;
-        font-weight: lighter;
-        background-color: #ffffff00;
-        font-size: 32pt;
     }
 }
