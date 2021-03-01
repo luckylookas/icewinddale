@@ -42,6 +42,7 @@ const counter = () => {
 }
 
 window.onload = () => {
+    return;
     counter();
     x = setInterval(counter, 1000);
 };

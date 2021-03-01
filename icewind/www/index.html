@@ -9,11 +9,11 @@ lighter base #223340
 
 -->
 <head>
-    <script src="countdown.js"></script>
+<!--    <script src="countdown.js"></script>-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="forms.css" />
     <link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="input.css" />
     <link rel="stylesheet" href="impressum.css" />
 
     <meta charset="UTF-8">
@@ -34,44 +34,72 @@ lighter base #223340
 <div id="content">
     <h1 class="teaser">From caves of ice and fields of snow<br/>
         The breath of night like death did flow<br/>
-        Beneath the sinking moon</h1>
+        Beneath the sinking moon<br>
+    Welcome to the far north</h1>
     <h1 class="countdown">it's time...</h1>
 
     <div id="first-row" class="row teaser">
-        <div class="column">Lorem ipsum dolor sit amet,
-            consetetur sadipscing elitr, sed diam nonumy eirmod
-            tempor invidunt ut labore et dolore magna aliquyam erat,
-            sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
-            est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
-            consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-            invidunt ut labore et dolore magna aliquyam erat, sed diam
-            voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-            Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-            ipsum dolor sit amet.</div>
+        <div class="column">North of the spine of the world and west of the towering Redhead Glacier lies a rigid expanse that few dare to explore.
+        Most of icewind dales people are outcasts or fugitives or pariahs in search for a place where they are tolerated - if not accepted.
+        </div>
         <div class="spacer"></div>
-        <div class="column">Lorem ipsum dolor sit amet,
-            consetetur sadipscing elitr, sed diam nonumy eirmod
-            tempor invidunt ut labore et dolore magna aliquyam erat,
-            sed diam voluptua. At vero eos et accusam et justo duo dolores
-            et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
-            est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
-            consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-            invidunt ut labore et dolore magna aliquyam erat, sed diam
-            voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-            Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-            ipsum dolor sit amet.</div>
+        <div class="column">
+            Some come for the solitude, some to make their fortunes. Some come for the people, as the bitter cold nights draws everyone closer.
+            So dress up in your warmest clothes, pack enough food and water and travel up the mountain passes, across the spine of the world and into the unknown.</div>
     </div>
 
     <div id="form" class="row teaser">
         <div class="column">
-            <label for="origin">ich bin dabei!</label>
-            <br/><select id="origin" name="origin">
-                <option value="pirate">I stranded in this god forsaken place years ago...</option>
-                <option value="mage">I came here to find secrets about the weave...</option>
-                <option value="giant">I am of ancient noble blood and seek my ancestors...</option>
-            </select>
+            <h2 for="origin">So traveler, who are you and why have you come?</h2>
+
+            <div class="section flexcontainer" id="section-character">
+                <span class="flexinput">I am&nbsp;
+                    <input name="name" />
+                </span>
+                <span class="flexinput">,&nbsp;a&nbsp;
+                    <input name="descriptor" /><a href="https://cypherguide.com/descriptors/" target="_blank">?</a></span>
+                    <span>&nbsp;</span>
+                    <select name="class" >
+                        <option value="warrior">Warrior</option>
+                        <option value="explorer">Explorer</option>
+                        <option value="adept">Adept</option>
+                        <option value="speaker">Speaker</option>
+                    </select>
+                </span>
+
+                <span class="flexinput">&nbsp;specializing in&nbsp;
+                    <select name="flavor" >
+                        <option value="stealth">Stealth</option>
+                        <option value="magic">Magic</option>
+                        <option value="combat">Combat</option>
+                        <option value="knowledge">Knowledge</option>
+                    </select>
+                </span>
+                <span class="flexinput">&nbsp;who&nbsp;<input name="focus" /><a href="https://cypherguide.com/foci/" target="_blank">?</a></span>
+
+            </div>
+
+            <div class="section" id="section-origin">
+                <label for="origin">I came here because...</label>
+                <select onselect="revealLore" id="origin" name="origin">
+                    <option value="pirate">I know of an Artefact worth a kingdom stranded in the dale.</option>
+                    <option value="mage">ancient magic beyond belief is conserved in ice.</option>
+                    <option value="bremen">my brothers and I left our heritage long ago. I return to claim it.</option>
+                    <option value="hilda">my Grandmothers sister was taken to the north by witches.</option>
+                    <option value="mind">I have strange nightmares of black ice that draw me north.</option>
+                    <option value="lost">I lost everything seek a fresh start at the end of the world.</option>
+                    <option value="adventure">Kelvin's Cairn is the hardest climb there is and I will make it.</option>
+                    <option value="holy">an Angel tasked me to save Ten Towns from their impending doom.</option>
+                </select>
+            </div>
+
+            <div class="section lore-reveal">
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+            </div>
+
+
         </div>
+
     </div>
 </div>
 
