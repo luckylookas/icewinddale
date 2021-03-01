@@ -1,0 +1,27 @@
+#impressum {
+    padding: 5px;
+    z-index: 999;
+    color: #EFFBFF;
+    text-underline: #EFFBFF;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: small;
+}
+
+h2 {
+    z-index: 20;
+    padding-bottom: 20px;
+}
+
+#content_impressum {
+    left: 50px;
+    bottom: 10vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    z-index: 11;
+    position: absolute;
+}
