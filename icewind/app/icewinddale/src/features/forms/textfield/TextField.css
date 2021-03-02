@@ -1,0 +1,73 @@
+@import "src/const.css";
+.label {
+    padding-left: 5px;
+    padding-right: 5px;
+    display: inline-block;
+    text-align: left;
+}
+
+.options {
+    max-height: 10vh;
+    overflow-y: auto;
+    top: 100%;
+    left: 0;
+    right: 0;
+    position: absolute;
+    z-index: 9999;
+    box-shadow: 0px 1px 2px 0px  #EFFBFF ;
+}
+.options div {
+    padding: 2px;
+    color: var(--text);
+    background-color: var(--bg);
+    cursor: pointer;;
+}
+
+.options div:hover {
+    color: var(--bg);
+    background-color: var(--text);
+}
+
+.textfield {
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+span {
+    font-weight: lighter;
+    background-color: #ffffff00;
+}
+
+input {
+    width: 100%;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    outline: none;
+    appearance: none;
+    border-bottom: 2px solid #EFFBFF;
+    font-weight: lighter;
+    background-color: #ffffff00;
+}
+
+a {
+    width: 16pt;
+    height: 16pt;
+    z-index: 20;
+    background-color: var(--primary) ;
+    text-align: center;
+    font-size: 12pt;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    text-decoration: none;
+    border-radius: 100px;
+}
+
+a:hover {
+    background-color: var(--accent) ;
+    width: 18pt;
+    height: 18pt;
+}

@@ -1,0 +1,14 @@
+.flexbox {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.characterform {
+    background-color: transparent;
+}
+
+.flexInput {
+    padding-left: 5px;
+    padding-right: 5px;
+}
