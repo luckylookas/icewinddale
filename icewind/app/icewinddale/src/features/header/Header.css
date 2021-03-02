@@ -1,3 +1,5 @@
+@import "../../const.css";
+
 h1, h2 {
     z-index: 15;
     overflow: hidden;
@@ -6,21 +8,9 @@ h1, h2 {
     padding: 1vw 1vw 25vh;
 }
 
-
-@media only screen and (max-width: 1000px) {
-    h1 {
-        font-size: 16pt;
-    }
-    h2 {
-        font-size: 14pt;
-    }
+h1 {
+    font-size: xx-large;
 }
-
-@media only screen and (min-width: 1000px) {
-    h1 {
-        font-size: 32pt;
-    }
-    h2 {
-        font-size: 16pt;
-    }
+h2 {
+    font-size: x-large;
 }

@@ -1,6 +1,6 @@
 import React, {FC, useEffect, useState} from "react";
-import "./CharacterForm.css"
-import {TextField} from "./textfield/TextField";
+import "../forms.css"
+import {TextField} from "../textfield/TextField";
 
 const TYPES = ["Warrior", "Adept", "Explorer", "Speaker"]
 const DESCRIPTORS = ['appealing', 'Beneficient', 'Brash', 'calm'
@@ -154,7 +154,7 @@ export const CharacterForm: FC<CharacterFormProps> = ({done}) => {
     ) {
             done(`I am ` + pname + ` and will be ` + name + toggleAAn(descriptor) + ` ` + type + (flavor ? ` specializing in ` + flavor : '') + ' who ' + focus)}
 
-    }, [pname, name, descriptor, type, flavor, focus])
+    }, [pname, name, descriptor, type, flavor, focus, done])
 
     const toggleAAn = (str: string): string => {
         return str.toUpperCase().startsWith('A')  ||

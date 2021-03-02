@@ -1,16 +1,27 @@
-:root {
-  --bg: #1B1C1D;
-  --accent: #009DF7;
-  --text: #EFFBFF;
-  --primary: #223340;
-  --xlscreen: 1000px;
-}
-
-*, body, html {
+@import "const.css";
+* {
+  box-sizing: border-box;
   background-color: var(--bg);
   margin: 0;
   padding: 0;
   font-family: 'Cinzel', serif;
-  color: #EFFBFF;
+  color: var(--text);
+}
+
+body, html {
   overflow-x: hidden;
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+  * {
+    font-size: 12pt;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+   * {
+    font-size: 16pt;
+  }
 }

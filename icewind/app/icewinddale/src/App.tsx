@@ -1,7 +1,7 @@
 import React, {Fragment} from 'react';
 import './App.css';
-import Header from "./features/header/Header";
-import Content from "./features/content/Content";
+import Header from './features/header/Header';
+import Content from './features/content/Content';
 
 function App() {
     return <Fragment>

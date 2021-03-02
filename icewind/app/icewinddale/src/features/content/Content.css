@@ -1,20 +1,14 @@
-div {
+.content-container {
+    height: 100%;
+    font-size: medium;
     z-index: 15;
     padding: 1vw;
-    overflow: hidden;
     font-weight: lighter;
     background-color: #ffffff00;
 }
 
-@media only screen and (max-width: 1000px) {
-    div {
-        font-size: 12pt;
-    }
+div {
+    font-size: medium;
+    font-weight: lighter;
+    background-color: #ffffff00;
 }
-
-@media only screen and (min-width: 1000px) {
-    div {
-        font-size: 16pt;
-    }
-}
-
