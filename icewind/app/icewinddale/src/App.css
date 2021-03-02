@@ -1,6 +1,9 @@
 @import "const.css";
 
 .content {
+    padding-left: 10vw;
+    padding-right: 10vw;
+
     width: 100vw;
     display: flex;
     flex-direction: column;
