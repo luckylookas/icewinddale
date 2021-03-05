@@ -1,3 +1,10 @@
 .contentArea {
     padding-bottom: 10vh;
+    display: flex;
+    width: 100%;
+}
+
+.contentArea > div {
+    display: flex;
+    width: 100%;
 }

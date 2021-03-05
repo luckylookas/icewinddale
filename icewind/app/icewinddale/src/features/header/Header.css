@@ -5,7 +5,7 @@ h1, h2 {
     overflow: hidden;
     font-weight: lighter;
     background-color: #ffffff00;
-    padding: 1vw 1vw 25vh;
+    padding-bottom: 10vh;
 }
 
 h1 {
@@ -13,4 +13,13 @@ h1 {
 }
 h2 {
     font-size: x-large;
+}
+
+.impressum {
+    background-color: transparent;
+    padding: 5px;
+    position: absolute;
+    font-size: small;
+    top: 0;
+    left:0;
 }

@@ -7,7 +7,7 @@
 }
 
 .options {
-    max-height: 10vh;
+    max-height: 35vh;
     overflow-y: auto;
     top: 100%;
     left: 0;
@@ -17,10 +17,12 @@
     box-shadow: 0px 1px 2px 0px  #EFFBFF ;
 }
 .options div {
+    font-size: x-large;
     padding: 2px;
+    border-bottom: 1px solid var(--text);
     color: var(--text);
     background-color: var(--bg);
-    cursor: pointer;;
+    cursor: pointer;
 }
 
 .options div:hover {
@@ -31,16 +33,21 @@
 .textfield {
     display: inline-block;
     position: relative;
+    flex-grow: 1;
+    left:0;
+    right: 0;
     margin: 0;
     padding: 0;
 }
 
 span {
+    flex-grow: 0.2;
     font-weight: lighter;
     background-color: #ffffff00;
 }
 
 input {
+    flex-grow: 1;
     width: 100%;
     border-top-style: hidden;
     border-right-style: hidden;
@@ -52,7 +59,7 @@ input {
     background-color: #ffffff00;
 }
 
-a {
+.help {
     width: 16pt;
     height: 16pt;
     z-index: 20;
@@ -66,7 +73,7 @@ a {
     border-radius: 100px;
 }
 
-a:hover {
+.help:hover {
     background-color: var(--accent) ;
     width: 18pt;
     height: 18pt;

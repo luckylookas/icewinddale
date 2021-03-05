@@ -1,108 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--
-
-backround base #1B1C1D
-highlight blue #009DF7
-contrast text #EFFBFF
-lighter base #223340
-
--->
-<head>
-<!--    <script src="countdown.js"></script>-->
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="forms.css" />
-    <link rel="stylesheet" href="main.css" />
-    <link rel="stylesheet" href="impressum.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>React App</title>
+  </head>
 
-    <meta charset="UTF-8">
-    <title>What have we done?</title>
-</head>
-<header>
-    <a id="impressum" href="impressum.html">impressum</a>
-    <div class="bg bg-red">
-        <div class="gradient"></div>
-        <img class="ensure_size" src="blue_red_final.jpg" style="visibility: hidden;" />
-    </div>
-    <div class="bg bg-green">
-        <div class="gradient"></div>
-        <img class="ensure_size" src="blue_red_final.jpg" style="visibility: hidden;" />
-    </div>
-</header>
-
-<div id="content">
-    <h1 class="teaser">From caves of ice and fields of snow<br/>
-        The breath of night like death did flow<br/>
-        Beneath the sinking moon<br>
-    Welcome to the far north</h1>
-    <h1 class="countdown">it's time...</h1>
-
-    <div id="first-row" class="row teaser">
-        <div class="column">North of the spine of the world and west of the towering Redhead Glacier lies a rigid expanse that few dare to explore.
-        Most of icewind dales people are outcasts or fugitives or pariahs in search for a place where they are tolerated - if not accepted.
-        </div>
-        <div class="spacer"></div>
-        <div class="column">
-            Some come for the solitude, some to make their fortunes. Some come for the people, as the bitter cold nights draws everyone closer.
-            So dress up in your warmest clothes, pack enough food and water and travel up the mountain passes, across the spine of the world and into the unknown.</div>
-    </div>
-
-    <div id="form" class="row teaser">
-        <div class="column">
-            <h2 for="origin">So traveler, who are you and why have you come?</h2>
-
-            <div class="section flexcontainer" id="section-character">
-                <span class="flexinput">I am&nbsp;
-                    <input name="name" />
-                </span>
-                <span class="flexinput">,&nbsp;a&nbsp;
-                    <input name="descriptor" /><a href="https://cypherguide.com/descriptors/" target="_blank">?</a></span>
-                    <span>&nbsp;</span>
-                    <select name="class" >
-                        <option value="warrior">Warrior</option>
-                        <option value="explorer">Explorer</option>
-                        <option value="adept">Adept</option>
-                        <option value="speaker">Speaker</option>
-                    </select>
-                </span>
-
-                <span class="flexinput">&nbsp;specializing in&nbsp;
-                    <select name="flavor" >
-                        <option value="stealth">Stealth</option>
-                        <option value="magic">Magic</option>
-                        <option value="combat">Combat</option>
-                        <option value="knowledge">Knowledge</option>
-                    </select>
-                </span>
-                <span class="flexinput">&nbsp;who&nbsp;<input name="focus" /><a href="https://cypherguide.com/foci/" target="_blank">?</a></span>
-
-            </div>
-
-            <div class="section" id="section-origin">
-                <label for="origin">I came here because...</label>
-                <select onselect="revealLore" id="origin" name="origin">
-                    <option value="pirate">I know of an Artefact worth a kingdom stranded in the dale.</option>
-                    <option value="mage">ancient magic beyond belief is conserved in ice.</option>
-                    <option value="bremen">my brothers and I left our heritage long ago. I return to claim it.</option>
-                    <option value="hilda">my Grandmothers sister was taken to the north by witches.</option>
-                    <option value="mind">I have strange nightmares of black ice that draw me north.</option>
-                    <option value="lost">I lost everything seek a fresh start at the end of the world.</option>
-                    <option value="adventure">Kelvin's Cairn is the hardest climb there is and I will make it.</option>
-                    <option value="holy">an Angel tasked me to save Ten Towns from their impending doom.</option>
-                </select>
-            </div>
-
-            <div class="section lore-reveal">
-                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-            </div>
-
-
-        </div>
-
-    </div>
-</div>
-
-<footer></footer>
-
+    <div id="root"></div>
 </html>

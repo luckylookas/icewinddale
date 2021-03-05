@@ -1,18 +1,18 @@
-import React, {FC, Fragment, useEffect, useState} from "react";
+import React, {FC, useEffect, useState} from "react";
 import "./TextField.css"
 import CompleteOption from "./option/CompleteOption";
 
-interface TextFieldProps {
+export interface TextFieldProps {
     hint?: string;
     label: string
     setValue: (value: string) => void
     value: string
     link?: string
     optionsSource?: (filter: string) => string[]
+    onBlur?: () => void
 }
 
-export const TextField: FC<TextFieldProps> = ({hint, label, value, setValue, link, optionsSource}) => {
-
+export const TextField: FC<TextFieldProps> = ({onBlur, hint, label, value, setValue, link, optionsSource}) => {
     const [options, setOptions] = useState<string[]>([])
     const [active, setActive] = useState(false);
 
@@ -22,6 +22,9 @@ export const TextField: FC<TextFieldProps> = ({hint, label, value, setValue, lin
 
     const onFocusLost = () => {
         setActive(false);
+        if (onBlur) {
+            onBlur();
+        }
     }
 
     useEffect(() => {
@@ -35,18 +38,26 @@ export const TextField: FC<TextFieldProps> = ({hint, label, value, setValue, lin
         setActive(false);
     }
 
-    return <Fragment>
+    return <div>
         <span className={'label'}>{label}</span>
         <div className='textfield'>
-            <input name='label'
+            <input name={label}
+                   autoFocus
                    type='text'
                    placeholder={hint ? hint : ''}
                    value={value}
                    onFocus={onFocus}
                    onBlur={onFocusLost}
+                   onKeyUp={(event) => {
+                       event.stopPropagation();
+                       event.preventDefault();
+                       if (event.key.toUpperCase() === 'ENTER') {
+                           onFocusLost();
+                       }
+                   }}
                    onChange={($event) => setValue($event.target.value)}/>
             {
-                link ? <a href={link} rel='noreferrer' target='_blank'>?</a> : null
+                link ? <a className={'help'} href={link} rel='noreferrer' target='_blank'>?</a> : null
             }
             {
                 options.length && active
@@ -58,5 +69,5 @@ export const TextField: FC<TextFieldProps> = ({hint, label, value, setValue, lin
                     null
             }
         </div>
-    </Fragment>
+    </div>
 }

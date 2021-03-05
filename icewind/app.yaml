@@ -4,9 +4,9 @@ threadsafe: true
 
 handlers:
   - url: /
-    static_files: www/index.html
-    upload: www/index.html
+    static_files: app/icewinddale/build/index.html
+    upload: app/icewinddale/build/index.html
 
   - url: /(.*)
-    static_files: www/\1
-    upload: www/(.*)
+    static_files: app/icewinddale/build/\1
+    upload: app/icewinddale/build/(.*)
