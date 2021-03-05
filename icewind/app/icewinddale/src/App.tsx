@@ -13,7 +13,6 @@ function App() {
             <div className="gradient"/>
             <img className="ensure_size" src="blue_red_final.jpg" alt="green aurora"/>
         </div>
-
         <div className="content">
           <Header />
           <Content />

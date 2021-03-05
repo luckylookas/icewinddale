@@ -8,11 +8,6 @@ function Header() {
     const [timer, setTimer] = useState<NodeJS.Timeout | null>(null)
     const [left, setLeft] = useState<string>('...')
 
-    useEffect(() => {
-        setTimer(setInterval(() => counter(countDownDate), 1000));
-    }, [countDownDate])
-
-
     const counter = (target: number) => {
         const now = new Date().getTime();
         const distance = target - now;
@@ -30,6 +25,12 @@ function Header() {
         setLeft(days + " days " + hours + " hours "
             + minutes + " minutes " + seconds + " seconds ");
     }
+
+    useEffect(() => {
+        setTimer(setInterval(() => counter(countDownDate), 1000));
+    }, [setTimer])
+
+
 
 
     return <Fragment>

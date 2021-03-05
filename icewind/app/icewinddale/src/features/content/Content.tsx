@@ -1,4 +1,4 @@
-import React, {Fragment, useEffect, useRef, useState} from "react";
+import React, { useEffect, useState} from "react";
 import "./Content.css"
 import {Character, characterToString, DESCRIPTORS, FLAVORS, FOCI, TYPEHELP, TYPES} from "./CharacterFormOptions";
 import {TextField} from "../forms/textfield/TextField";
@@ -37,8 +37,7 @@ function Content() {
 
     useEffect(() => {
         setCharacter(characterToString({pname, name, descriptor, type, flavor, focus, origin} as Character))
-    }, [step, pname, name, descriptor, type, flavor, focus])
-
+    }, [origin, step, pname, name, descriptor, type, flavor, focus])
 
     return <div className={'content-container'}>
         { step < 6 ?
@@ -194,6 +193,12 @@ function Content() {
                         You pack the most necessary, you say your goodbyes and hurry of.
                         A Dwarf by the name of Gorward IronMug operates a trading and fairing business
                         across the Spine of the world and he agrees to take you on the next run, as he already plans to take some other people.
+                    </div>
+                    <br />
+                    <h3>the table is set</h3>
+                    <br />
+                    <div className={'tablepic'}>
+                        <img className={'ensure_size'} src={'../tisch.jpg'} />
                     </div>
                 </FinalView>
 
