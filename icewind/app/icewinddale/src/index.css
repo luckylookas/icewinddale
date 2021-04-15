@@ -8,8 +8,10 @@
   color: var(--text);
 }
 
-body, html {
+body, html, #root {
   overflow-x: hidden;
+  height: 100vh;
+  width: 100vw;
 }
 
 

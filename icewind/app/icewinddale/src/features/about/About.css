@@ -1,0 +1,15 @@
+.contentImpressum {
+    padding: 5px;
+    z-index: 999;
+    color: #EFFBFF;
+    text-underline: #EFFBFF;
+    background: transparent;
+    position: absolute;
+    top: 100px;
+    font-size: small;
+}
+
+.contentImpressum > p, .contentImpressum > h2 {
+    background: transparent;
+
+}

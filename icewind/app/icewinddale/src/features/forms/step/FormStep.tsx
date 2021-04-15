@@ -7,7 +7,7 @@ interface FormStepProps {
 }
 
 export const FormStep: FC<FormStepProps> = (props) => {
-   return <CSSTransition unmountOnExit timeout={300} in={props.active} classNames={'formstep'}>
+   return <CSSTransition unmountOnExit timeout={250} in={props.active} classNames={'formstep'}>
         <ContentArea>
             {props.children}
         </ContentArea>

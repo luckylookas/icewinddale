@@ -2,7 +2,7 @@
 
 1. gritty resting:
     from [1 action, 10 minutes, 1 hour, 8 hours]
-    to [1 action, 1 hours, 8 hours, 24 hours]
+    to [1 action, 10 minutes, 1 hour, 8 hours, 24 hours]
 
 2. gritty nutrition and sleep:
     if a PC does not eat or during 8 and 24 hour rests
@@ -41,14 +41,14 @@ What that preparation looks like is up to the Player, be creative and own your c
 
 ###creating ciphers
 
-Creating a cipher is a task of pool matching your preparation technique, of difficulty {target cipher level  * 2} and takes the {target cipher level} of rests (during which you do not gain the benefits of resting) to do.
+Creating a cipher is a task of pool matching your preparation technique, of difficulty {target cipher level} and takes the {target cipher level} of rests (during which you do not gain the benefits of resting) to do.
 The PC can apply assets and effort to reduce the difficulty as by the normal rules.
 They can also remove the longest rest slot by applying one point of effort, which can be done multiple times aswell.
 
 so creating a level 6 cipher means:
 
-task difficulty: 12
-time required: 6 rests [ 1 action, 1 hour, 8 hours, 24 hours, 1 action, 1 hour]
+task difficulty: 6
+time required: 6 rests [ 1 action, 10 minutes, 1 hour, 8 hours, 24 hours, 1 action]
 
 1 effort could reduce the difficulty to 11 or eliminate the 24 hour rest requirement.
 

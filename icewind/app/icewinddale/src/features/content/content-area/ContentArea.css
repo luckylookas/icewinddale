@@ -1,7 +1,27 @@
 .contentArea {
-    padding-bottom: 10vh;
+    padding-top: 50px;
+    padding-bottom: 25px;
+
     display: flex;
+    flex-direction: column;
     width: 100%;
+}
+
+h2 {
+    background-color: transparent;
+    padding-bottom: 25px;
+
+}
+ul {
+    background-color: transparent;
+}
+li {
+    background-color: transparent;
+}
+
+p {
+    line-height: 125%;
+    background-color: transparent;
 }
 
 .contentArea > div {

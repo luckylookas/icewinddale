@@ -1,0 +1,119 @@
+div {
+    font-size: medium;
+    font-weight: lighter;
+    background-color: #ffffff00;
+}
+
+h3 {
+    background-color: transparent;
+    font-weight: normal;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+
+}
+
+.buttons > .button {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.buttons > .buttondisabled{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.textfield-container {
+    width: 100%;
+    height: 100px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    justify-content: space-between;
+}
+
+.button {
+    justify-content: center;
+    flex-grow: 1;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    font-weight: bolder;
+    color: var(--text);
+    background-color: var(--accent);
+}
+
+
+.buttondisabled {
+    justify-content: center;
+    flex-grow: 1;
+    padding: 10px;
+    cursor: default;
+    border-radius: 5px;
+    display: flex;
+    font-weight: bolder;
+    color: var(--text);
+    background-color: var(--accent-light);
+}
+
+.button:hover {
+    background-color: var(--text);
+    color: var(--primary)
+}
+
+.formstep-enter {
+    opacity: 0;
+    transform: translateX(-100vw);
+}
+
+.formstep-enter-active {
+    display: flex;
+    opacity: 1;
+    transform: translateX(0);
+    transition: 0.3s ease-out all;
+}
+
+
+.formstep-enter-done {
+
+}
+
+.formstep-exit {
+    position: absolute;
+    opacity: 1;
+    max-height: 0;
+    transform: translateX(0);
+}
+
+.formstep-exit-active {
+    position: absolute;
+    opacity: 0;
+    max-height: 0;
+    transform: translateX(100vw);
+    transition: 0.3s ease-out all;
+}
+
+.finalView {
+    display: flex;
+    flex-direction: column !important;
+}
+
+.tablepic {
+
+}
+
+.tablepic {
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    z-index: 15;
+    opacity: 1;
+    background-image: url("../../tisch.jpg");
+}

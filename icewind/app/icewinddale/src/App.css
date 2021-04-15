@@ -3,8 +3,8 @@
 .content {
     padding-left: 10vw;
     padding-right: 10vw;
-
     width: 100vw;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     background-color: transparent;
@@ -12,9 +12,14 @@
     position: absolute;
 }
 
+#content {
+    top: 100px;
+}
+
 .ensure_size {
     visibility: hidden;
     width: 100vw;
+    height: 100vh;
 }
 
 .gradient {
@@ -28,9 +33,13 @@
 }
 
 .bgred {
-    width: 100vw;
-    background-size: contain;
+    max-width: 100vw;
+    max-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
+    background-size: 100% 100%;
+    overflow: hidden;
     z-index: 9;
     position: absolute;
     top: 0;
@@ -41,14 +50,18 @@
 }
 
 .bggreen {
-    width: 100vw;
-    background-size: contain;
+    max-width: 100vw;
+    max-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
     z-index: 9;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
-    opacity: 0;
+    opacity: 1;
     animation: fadeOutIn ease-in-out 30s infinite;
     background-image: url("blue_green_final.jpg");
 }
@@ -74,17 +87,5 @@
     }
     100% {
         opacity:0;
-    }
-}
-
-@media only screen and (max-width: var(--xlscreen)) {
-    #content {
-        top: 1vh;
-    }
-}
-
-@media only screen and (min-width: var(--xlscreen)) {
-    #content {
-        top: 10vh;
     }
 }
