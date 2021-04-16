@@ -1,4 +1,5 @@
 import React,  {FC, Fragment} from "react";
+import { Link } from "react-router-dom";
 import {ContentArea} from "../content/content-area/ContentArea";
 
 export const Magic: FC = () => {
@@ -32,16 +33,16 @@ export const Magic: FC = () => {
             <h2>creating a cipher - rules</h2>
             <p>
                 creating a cipher is a task of a pool matching your preparation technique. <br />
-                The difficulty is the {'{target-level}'} and it takes the {'{target-level}'} of rests to perform, during which you do not gain the benefits of resting.<br />
+                The difficulty is the {'{target-level}'} and it takes the {'{target-level}'} of rests to perform, during which you gain half the (mechanical) benefits of resting.<br />
                 The PC can apply assets and effort to reduce the difficulty as by the normal rules.<br />
                 They can also remove the longest rest by applying one point of effort, which can be done multiple times.<br />
             </p><p>
                 so creating a level 6 cipher means: <br />
             <br />
                 task difficulty: 6<br />
-                time required: 6 rests [ 1 action, 10 minutes, 1 hour, 8 hours, 24 hours, 1 action]<br />
+                time required: 6 rests [ 1 action, 10 minutes, 1 hour, 8 hours, <Link to={"/survival"}>12 hours</Link> 1 action, 10 minutes]<br />
             <br />
-                1 effort could reduce the difficulty to 5 or eliminate the 24 hour rest requirement.<br />
+                1 effort could reduce the difficulty to 5 or eliminate the 12 hour rest.<br />
             <br />
                 failing the tasks consumes the time and effort spent, but yields no results.<br />
                 There is no upper limit on the cipher levels a PC can target, the lower limit is the <b>level the cipher from the book would have if you rolled a 1 on the d6 roll</b> required

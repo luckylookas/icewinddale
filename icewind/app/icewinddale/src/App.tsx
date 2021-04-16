@@ -10,6 +10,7 @@ import {
 } from "react-router-dom";
 import {About} from "./features/about/About";
 import {Magic} from "./features/magic/Magic";
+import {Survival} from "./features/survival/Survival";
 
 function App() {
     return <Fragment>
@@ -35,6 +36,9 @@ function App() {
                         </Route>
                         <Route path={"/about"}>
                             <About />
+                        </Route>
+                        <Route path={"/survival"}>
+                            <Survival />
                         </Route>
                     </Switch>
             </Content>

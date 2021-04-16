@@ -159,7 +159,7 @@ function CharacterForm() {
         {
             origin && step === 7 ?
                 <FormStep active={step === 7}>
-                    <div dangerouslySetInnerHTML={{__html: origin!}}/>
+                    <div className={'ccc'} dangerouslySetInnerHTML={{__html: origin!}}/>
                     <div className={'buttons'}>
                         <div className={'button'} onClick={() => advance(true,6)}>
                             {'wait, no'}</div>
